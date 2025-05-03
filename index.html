@@ -1,116 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kumar Abhimanyu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            width: 100%;
-            padding: 20px;
-            text-align: center;
-        }
-        .profile-img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #0073e6;
-        }
-        .social-links img {
-            width: 30px;
-            height: 30px;
-            vertical-align: middle;
-        }
-        .slider {
-            position: relative;
-            max-width: 100%;
-            margin: 20px auto;
-        }
-        .slides {
-            display: none;
-        }
-        .active {
-            display: block;
-        }
-        .slider img {
-            width: 100%;
-            border-radius: 10px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumar Abhimanyu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            margin-top: 200px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0073e6;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+        .slider {
+            position: relative;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+        .slides {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .slider img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-        <h1>John Doe</h1>
-        <p>Hello! I'm Kumar Abhimanyu, Goal oriented Senior Software Engineer with 10+ years of experience in frontend and backend development in JavaScript, Express.js, Node.js, AWS, PHP, jQuery, HTML, Cascading Style Sheets (CSS) etc.
+    <div class="container">
+        <img src="profile.jpg" alt="Profile" class="profile-img">
+        <h1>Kumar Abhimanyu</h1>
+        <p>
+            Hello! I'm Kumar Abhimanyu, a goal oriented Senior Software Engineer with 10+ years of experience in frontend and backend development in JavaScript, Express.js, Node.js, AWS, PHP, jQuery, HTML, Cascading Style Sheets (CSS) etc.
+            <br><br>
+            I am post graduate in Master of Computer Application. Dedicated to implementing new strategies and improving application.
+            <br><br>
+            Expert in languages like Node.js, PHP, Mysql, Mongodb, Angular.js, AJAX, JQuery, HTML & CSS etc. I also have knowledge of AWS services, Jira, Confluence, Git, FileZilla.
+            <br><br>
+            Curious to learn new technologies and utilize them accordingly.
+        </p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/abhimanyuiweb" target="_blank">
+                <img height="30" src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/abhimanyuiweb" target="_blank">
+                <img height="30" src="github-logo.png" alt="GitHub">
+            </a>
+            <a href="https://twitter.com/abhimanyuiweb" target="_blank">
+                <img height="30" src="twitter.png" alt="Twitter">
+            </a>
+        </div>
+        <div class="slider">
+            <div class="slides active">
+                <img src="image1.jpg" alt="Image 1">
+            </div>
+            <div class="slides">
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+            <div class="slides">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
 
-I am post graduate in Master of Computer Application. Dedicated to implementing new strategies and improving application. 
-
-Expert in languages like Node.js, PHP, Mysql, Mongodb, Angular.js, AJAX, JQuery, HTML & CSS etc. I also have knowledge of AWS services, Jira, Confluence, Git, FileZilla.
-
-Curious to learn new technologies and utilize them accordingly.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/abhimanyuiweb" target="_blank"><img height="30" src="linkedin.png" alt="LinkedIn"></a>
-            <a href="https://github.com/abhimanyuiweb" target="_blank"><img height="30" src="github-logo.png" alt="GitHub"></a>
-            <a href="https://twitter.com/abhimanyuiweb" target="_blank"><img height="30" src="twitter.png" alt="Twitter"></a>
-        </div>
-        
-      
-         <div class="slider">
-            <div class="slides active">
-                <img src="image1.jpg" alt="Image 1">
-            </div>
-            <div class="slides">
-                <img src="image2.jpg" alt="Image 2">
-            </div>
-            <div class="slides">
-                <img src="image3.jpg" alt="Image 3">
-            </div>
-        </div>
-    </div>
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let slides = document.getElementsByClassName("slides");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-    </script>
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
 </body>
 </html>
-               
