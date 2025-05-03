@@ -72,16 +72,39 @@
         <h1>John Doe</h1>
         <p>Hello! I'm John, a passionate software engineer with expertise in web development, machine learning, and cloud computing. I love creating innovative solutions to complex problems and continuously learning new technologies.</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/johndoe" target="_blank">
-                <img height="30" src="linkedin.png" alt="LinkedIn"> LinkedIn</a>
-            <a href="https://github.com/johndoe" target="_blank">
-                <img height="30" src="github-logo.png" alt="GitHub"> GitHub</a>
-            <a href="https://twitter.com/johndoe" target="_blank">
-                <img height="30" src="twitter.png" alt="Twitter"> Twitter</a>
+            <a href="https://www.linkedin.com/in/abhimanyuiweb" target="_blank"><img height="30" src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/abhimanyuiweb" target="_blank"><img height="30" src="github-logo.png" alt="GitHub"></a>
+            <a href="https://twitter.com/abhimanyuiweb" target="_blank"><img height="30" src="twitter.png" alt="Twitter"></a>
         </div>
-        <div class="slider">
+        
+      
+         <div class="slider">
             <div class="slides active">
                 <img src="image1.jpg" alt="Image 1">
             </div>
             <div class="slides">
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+            <div class="slides">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>
                
